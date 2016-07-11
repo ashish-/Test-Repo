@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <RECORD>
+    <FIELD ID="1" xsi:type="CharFixed" LENGTH="50"/>
+    <FIELD ID="2" xsi:type="CharFixed" LENGTH="50"/>
+    <FIELD ID="3" xsi:type="CharFixed" LENGTH="50"/>
+    <FIELD ID="4" xsi:type="CharFixed" LENGTH="256"/>
+    <FIELD ID="5" xsi:type="CharFixed" LENGTH="10"/>
+    <FIELD ID="6" xsi:type="CharFixed" LENGTH="10"/>
+    <FIELD ID="7" xsi:type="CharTerm"  LENGTH="10" TERMINATOR="\r\n"/>
+  </RECORD>
+  <ROW>
+    <COLUMN SOURCE="1" NAME="FCLTY_NBR_TXT" xsi:type="SQLVARYCHAR" NULLABLE="YES"/>
+    <COLUMN SOURCE="2" NAME="DEPT_NBR_TXT" xsi:type="SQLVARYCHAR" NULLABLE="YES"/>
+    <COLUMN SOURCE="3" NAME="BILL_COD" xsi:type="SQLVARYCHAR" NULLABLE="YES"/>
+    <COLUMN SOURCE="4" NAME="BILL_COD_DES" xsi:type="SQLVARYCHAR" NULLABLE="YES"/>
+    <COLUMN SOURCE="5" NAME="VOL_QTY" xsi:type="SQLNUMERIC" PRECISION="16" SCALE="6" NULLABLE="YES"/>
+    <COLUMN SOURCE="6" NAME="POST_DAT" xsi:type="SQLDATETIME" NULLABLE="YES"/>
+    <COLUMN SOURCE="7" NAME="SVC_DAT" xsi:type="SQLDATETIME" NULLABLE="YES"/>
+  </ROW>
+</BCPFORMAT>
